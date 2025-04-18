@@ -1,0 +1,762 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hillary Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/hero-bg.jpeg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        animation: blink-bg 1s infinite alternate;
+    }
+
+    /* WhatsApp Icon Blink */
+    .whatsapp-float img {
+        width: 50px;
+        height: 50px;
+        animation: blink-icon 1s infinite alternate;
+    }
+
+    /* Notification Badge */
+    .whatsapp-badge {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: red;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: unread-message 4.5s infinite;
+    }
+
+    /* Blinking effect for the icon */
+    @keyframes blink-icon {
+        0% { filter: brightness(1); }
+        100% { filter: brightness(2); }
+    }
+
+    /* Blinking effect for the background */
+    @keyframes blink-bg {
+        0% { background-color: #25D366; }
+        100% { background-color: #1ebe57; }
+    }
+
+    /* Cycling unread messages 1 → 3 */
+    @keyframes unread-message {
+        0% { content: "1"; }
+        33% { content: "2"; }
+        66% { content: "3"; }
+        100% { content: "1"; }
+    }
+
+    .whatsapp-badge::after {
+        content: "1"; /* Initial unread message */
+        animation: unread-message 4.5s infinite;
+    }
+</style>
+
+  <!-- =======================================================
+  
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/hero-bg.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Hillary Marindany</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/Marindany-02" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/hillary-marindany/" class="linkedin"  target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.credly.com/users/hillary-marindany" class="instagram" target="_blank"><i class="bx bx-link"></i></a>
+          <a href="https://x.com/k7_hillary" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/favorite.kiddo/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+          
+         
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Hillary Marindany</h1>
+    <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Network Administrator, Cloud Practitioner"></span></p>
+  </div>
+</section>
+<!-- End Hero Section -->
+
+
+  <main id="main"> <!-- ======= About Section ======= -->
+
+  <!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About</h2>
+      <p>I am Hillary Marindany, a passionate IT professional with a BSc in Information Technology from Pioneer International University, specializing in Network Administration, Software Engineering, and Cybersecurity. I focus on building web-based systems using PHP (Laravel), Python (Django), MySQL, HTML, CSS, and Bootstrap. I thrive on solving technical challenges and creating impactful digital solutions.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img src="assets/img/hero-bg.jpeg" class="img-fluid" alt="Profile Picture">
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Network Administrator &amp; Web Developer</h3>
+        <p class="fst-italic">
+          Key personal details and professional outlook.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>July 2002</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.hillarykipngeno.co.ke</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 758 012 573</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science in IT</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>hillarymarindany53@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          I am enthusiastic about exploring the ever-evolving world of technology, constantly learning, and contributing to impactful IT and software development projects.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>My clients range from individual,small ,medium and large companies. e-commerces, hospitals,schools,law firms etc.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects Completed</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="2">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="16">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>This skills Section defines the programming languages,  Networking and technologies I am much conversant with and frequently using to complete my projects.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">PYTHON <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Graphical Designing <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Resume</h2>
+      <p>My academic background, technical expertise, and professional experience.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Hillary Marindany</h4>
+          <p><em>Innovative and results-oriented IT professional with over 2 years of experience in network administration, web/software development, and technical support. Adept at delivering user-centric digital solutions, managing systems infrastructure, and ensuring seamless operations in dynamic environments.</em></p>
+        </div>
+
+        <h3 class="resume-title">Education</h3>
+
+        <div class="resume-item">
+          <h4>Bachelor of Science in Information Technology</h4>
+          <h5>Aug 2020 - Nov 2024</h5>
+          <p><em>Pioneer International University, Nairobi, Kenya</em></p>
+          <p>Studied programming, networking, cybersecurity, system administration, and specialized in network administration.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Back-End Software Development</h4>
+          <h5>Aug 2024 - Present</h5>
+          <p><em>ALX Africa</em></p>
+          <p>Learning back-end technologies including Django, Laravel, and MySQL for building scalable web applications.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>AWS Cloud Practitioner</h4>
+          <h5>Oct 2024 - Dec 2024</h5>
+          <p><em>eMobilis Technology Training Institute</em></p>
+          <p>Covered AWS services including S3, EC2, RDS, KMS, IAM, and cloud security best practices.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Web Development</h4>
+          <h5>Oct 2024 - Dec 2024</h5>
+          <p><em>eMobilis Technology Training Institute</em></p>
+          <p>Gained advanced skills in HTML, CSS, JavaScript (frontend), and Python (Django) for backend development.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Cloud and Network Security</h4>
+          <h5>May 2024 - Aug 2024</h5>
+          <p><em>CyberShujaa</em></p>
+          <p>Learned Nmap, Wireshark, IDS/IPS systems, and cloud security on AWS. Focused on threat mitigation and secure architecture.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Introduction to Cybersecurity</h4>
+          <h5>Oct 2023 - Dec 2023</h5>
+          <p><em>Cisco Networking Academy</em></p>
+          <p>Covered cybersecurity fundamentals, threat landscapes, and security technologies such as firewalls, IDS, and IPS.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Networking Basics</h4>
+          <h5>Oct 2023 - Dec 2023</h5>
+          <p><em>Cisco Networking Academy</em></p>
+          <p>Gained foundational knowledge in IP addressing, subnetting, network devices, and basic routing protocols.</p>
+        </div>
+
+        <div class="resume-item">
+          <h4>Network Addressing and Troubleshooting</h4>
+          <h5>Oct 2023 - Dec 2023</h5>
+          <p><em>Cisco Networking Academy</em></p>
+          <p>Focused on identifying and resolving network issues using diagnostic tools and addressing schemes.</p>
+        </div>
+
+        <h3 class="resume-title">Skills & Certifications</h3>
+        <div class="resume-item">
+          <ul>
+            <li><strong>Languages:</strong> PHP, Python, JavaScript, HTML/CSS, SQL</li>
+            <li><strong>Frameworks:</strong> Django, Laravel, Bootstrap</li>
+            <li><strong>Tools:</strong> Git, VirtualBox, Wireshark, Nmap, AWS (EC2, S3, RDS)</li>
+            <li><strong>Networking:</strong> IP addressing, VLANs, DHCP, Firewalls, CCNA Certified</li>
+            <li><strong>Certifications:</strong> AWS Cloud Practitioner, CCNA, ALX Backend Dev, Cisco Cybersecurity</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Professional Experience</h3>
+
+        <div class="resume-item">
+          <h4>ICT Technician</h4>
+          <h5>2025 - Present</h5>
+          <p><em>Digischool Management Systems, Nairobi, Kenya</em></p>
+          <ul>
+            <li>Trained school staff and administrators on usage of Digischool platforms including timetabling and exam analysis tools.</li>
+            <li>Collected feedback and feature requests for continuous system improvement.</li>
+            <li>Ensured uptime and support for school IT infrastructure and provided on-site installation of ICT hardware.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>Senior Graphic Design Specialist</h4>
+          <h5>Jan 2024 - Apr 2024</h5>
+          <p><em>Grandtek Solutions, Nairobi, Kenya</em></p>
+          <ul>
+            <li>Led the creation of promotional materials including logos, brochures, presentations, and digital ads.</li>
+            <li>Maintained branding consistency and consulted with clients for optimal visual solutions.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>Web Designer</h4>
+          <h5>2021 - Present</h5>
+          <p><em>Freelancing</em></p>
+          <ul>
+            <li>Designed and developed responsive websites for healthcare and education sectors.</li>
+            <li>Created wireframes and mockups, implemented interactive interfaces, and deployed projects to production.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>Network Administrator</h4>
+          <h5>2023 - 2024</h5>
+          <p><em>Grandtek Solutions, Nairobi, Kenya</em></p>
+          <ul>
+            <li>Configured enterprise networks, routers, and switches in accordance with CCNA standards.</li>
+            <li>Monitored and maintained network security using Nmap and other tools.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h4>Software Developer</h4>
+          <h5>2021 - Present</h5>
+          <p><em>Freelancing</em></p>
+          <ul>
+            <li>Developed an online bursary system using PHP & MySQL, integrating algorithm-based fund allocation logic.</li>
+            <li>Built a leave management system with user roles, workflows, and dashboard analytics.</li>
+            <li>Created an internship management system for institutions to monitor and assign student placements efficiently.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Resume Section -->
+
+
+ <!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p>I design and develop custom solutions for clients of all sizes—ranging from websites and enterprise systems to networks and security tools. My goal is to build future-ready applications that remain relevant in an ever-evolving tech world. You can explore even more of my work on <a href="https://github.com/Marindany-02" target="_blank">my GitHub</a>.</p>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-system">Systems</li>
+          <li data-filter=".filter-web">Web</li>
+          <li data-filter=".filter-net">Networking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Portfolio Item 2 -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-system">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="System Development Sample">
+          <div class="portfolio-links">
+            <a href="assets/img/portfolio/portfolio-2.png" class="portfolio-lightbox" title="Custom Management System"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="E-commerce Example">
+          <div class="portfolio-links">
+            <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="E-commerce Platform"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 4 -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-system">
+        <div class="portfolio-wrap">
+          <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="Another System Project">
+          <div class="portfolio-links">
+            <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hospital Management System"><i class="bx bx-plus"></i></a>
+            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="https://github.com/Marindany-02" target="_blank" class="btn btn-primary">Explore More on GitHub</a>
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Services</h2>
+      <p>I offer a wide range of IT services tailored to meet the needs of individuals, businesses, and institutions. My goal is to provide reliable, efficient, and innovative solutions that drive success and enhance digital experiences.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+        <div class="icon"><i class="bi bi-briefcase"></i></div>
+        <h4 class="title"><a href="#">Web Design</a></h4>
+        <p class="description">Design and development of modern websites including eCommerce platforms, blogs, portfolio sites, and school websites with responsive and user-friendly interfaces.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+        <h4 class="title"><a href="#">Networking Solutions</a></h4>
+        <p class="description">Installation and configuration of structured cabling, internet connectivity, computer lab setups, router/firewall configurations, and general network maintenance.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+        <h4 class="title"><a href="#">Cybersecurity Services</a></h4>
+        <p class="description">Security consultations including system audits, vulnerability assessments, penetration testing, endpoint protection, and implementation of cybersecurity best practices.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon"><i class="bi bi-binoculars"></i></div>
+        <h4 class="title"><a href="#">Graphic Design</a></h4>
+        <p class="description">Creative design services such as logo creation, flyers, posters, business cards, and branding materials for both digital and print media.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon"><i class="bi bi-brightness-high"></i></div>
+        <h4 class="title"><a href="#">Software Development</a></h4>
+        <p class="description">Custom system development including school management systems, hospital information systems, leave management systems, and other enterprise software solutions.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+        <h4 class="title"><a href="#">Freelancing & Support</a></h4>
+        <p class="description">Offering freelance support in areas such as Packet Tracer labs, IT assignments, and various on-demand tech-related tasks. Remote and in-person services available.</p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Testimonials</h2>
+      <p>Throughout my profession, I have had the opportunity to work with many clients and organizations. Here's what some of them say about the services I offer:</p>
+    </div>
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Working with Hillary was a game-changer. His dedication, technical expertise, and prompt communication made a significant difference in our project. Highly recommended!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img" alt="">
+            <h3>Peter Mungai</h3>
+            <h4>CEO, Grandtek</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Hillary consistently delivers excellent results. His knowledge in IT support and software development is impressive, and he always goes the extra mile to help.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-3.jpeg" class="testimonial-img" alt="">
+            <h3>Edward Kariuki</h3>
+            <h4>Lecturer, PIU</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              His ability to troubleshoot complex technical issues and provide innovative solutions is unmatched. He’s reliable, skilled, and an asset to any team.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-4.jpeg" class="testimonial-img" alt="">
+            <h3>Felix Ngetich</h3>
+            <h4>J. Maritim & Co Advocates</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Hillary is dependable and highly professional. Whether it’s networking, systems setup, or support, he approaches every task with clarity and precision.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>George Kamweru</h3>
+            <h4>Technician, MMU</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>This is it, if you want to get in touch with me and hire me to develop your website, web application, desktop application or a mobile application, be it personal or for business, then please fill the form to your right and I will get back to you.
+
+            We can also work together on your project. I would very much love to have that discussion with you. Lemme know through the form.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>2 <sup>nd</sup> Floor,Farm rangers,  <br>
+                  Narok, Kenya</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>hillarymarindany53@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+254 758 012 573</p>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.829520750935!2d36.82622307477736!3d-1.275628398712235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ed6ecd29e1%3A0x33409cf510de6303!2sPaward%20apartments!5e0!3m2!1sen!2ske!4v1707494764067!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="send_email.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                  <div class="form-group col-md-6">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="email">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Portfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="#">Hillary Marindany</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <a href="https://wa.me/2547XXXXXXXX" target="_blank" class="whatsapp-float">
+    <div class="whatsapp-badge"></div> <!-- Notification Badge -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+</a>
+
+</body>
+
+
+
+</html>
