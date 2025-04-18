@@ -684,7 +684,7 @@
       </div>
 
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-        <form action="send_email.php" method="post" role="form" class="php-email-form">
+        <formid="contact-form" onsubmit="sendEmail(); return false;" class="php-email-form">
           <div class="row">
               <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -755,7 +755,20 @@
     <div class="whatsapp-badge"></div> <!-- Notification Badge -->
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
 </a>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail() {
+  Email.send({
+    SecureToken: "your-smtp-token",
+    To: "recipient@example.com",
+    From: document.getElementById("email").value,
+    Subject: document.getElementById("subject").value,
+    Body: document.getElementById("message").value,
+  }).then(function (message) {
+    alert("Mail sent successfully!");
+  });
+}
+</script>
 </body>
 
 
