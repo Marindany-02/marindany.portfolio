@@ -1,24 +1,37 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    
-    // Set up the recipient email address
-    $to = "hillarykipngenok7@gmail.com"; // Change this to your email address
+    // Get form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
 
-    // Set up the email headers
-    $headers = "From: $name <$email>";
-    $headers .= "Reply-To: $email";
-    $headers .= "MIME-Version: 1.0";
-    $headers .= "Content-Type: text/html; charset=ISO-8859-1";
+    // Set the recipient email address
+    $to = "hillarymarindany53@gmail.com";
 
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "<div class='sent-message'>Your message has been sent. Thank you!</div>";
+    // Set the email subject
+    $email_subject = "New Contact Form Submission: " . $subject;
+
+    // Construct the email content
+    $email_body = "
+    You have received a new message from your website contact form:\n\n
+    Name: $name\n
+    Email: $email\n
+    Subject: $subject\n
+    Message:\n
+    $message
+    ";
+
+    // Set the email headers
+    $headers = "From: $email\n";
+    $headers .= "Reply-To: $email\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\n";
+
+    // Send the email
+    if (mail($to, $email_subject, $email_body, $headers)) {
+        echo "<script>alert('Your message has been sent successfully!'); window.location.href='index.html';</script>";
     } else {
-        echo "<div class='error-message'>Unable to send email. Please try again later.</div>";
+        echo "<script>alert('Message failed to send. Please try again later.'); window.location.href='index.html';</script>";
     }
 }
 ?>
