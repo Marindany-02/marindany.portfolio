@@ -31,7 +31,7 @@
     .whatsapp-float {
         position: fixed;
         bottom: 20px;
-        right: 20px;
+        right: 70px;
         background-color: #25D366;
         padding: 10px;
         border-radius: 50%;
@@ -47,23 +47,25 @@
         animation: blink-icon 1s infinite alternate;
     }
 
-    /* Notification Badge */
-    .whatsapp-badge {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background: red;
-        color: white;
-        font-size: 14px;
-        font-weight: bold;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: unread-message 4.5s infinite;
-    }
+/* Notification Badge */
+.whatsapp-badge {
+    position: absolute;
+    top: -6px; /* move slightly up */
+    right: -6px; /* move slightly right */
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: unread-message 4.5s infinite;
+    z-index: 1000; /* Ensure it's above or below other elements as needed */
+}
+
 
     /* Blinking effect for the icon */
     @keyframes blink-icon {
@@ -128,7 +130,9 @@
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+      
     </div>
+    
   </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
